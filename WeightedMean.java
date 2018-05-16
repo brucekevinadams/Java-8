@@ -30,7 +30,7 @@ public class WeightedMean {
 			arr2[arrItr] = arrItem;
 		}
 
-		System.out.println("Weighted Mean of 2 Arrays: " + weightedMean(arr, arr2, arrCount));
+		System.out.printf("Weighted Mean of 2 Arrays: %,.1f%n", weightedMean(arr, arr2, arrCount));
 		scanner.close();
 	}
 
