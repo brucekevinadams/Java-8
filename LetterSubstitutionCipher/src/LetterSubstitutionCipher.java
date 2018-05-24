@@ -1,3 +1,13 @@
+
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * 
+This program reads a file (dictionary.lst) which has a single "encrypted" word per line, parses it to a string and
+then decrypts the file contents. A map is used to store the "from" and "to" key/value pairs 
+*/
+
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
