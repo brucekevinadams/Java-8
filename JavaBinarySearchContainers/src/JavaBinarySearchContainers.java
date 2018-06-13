@@ -7,9 +7,10 @@
  *  
  *  This program shows that the method contains is much faster for binary search
  *  then using the method binarySearch. First, the program uses .contains to
- *  search for the number 100,000. Second, we search for 100,000 using the
- *  Collections.binarySearch method. We compute time in nanoseconds using
- *  the method System.nanoTime();
+ *  search for the number 5,000,000 and display the time it took in nanoseconds to
+ *  find the number. Second, we search for the number 5,000,000
+ *  using the Collections.binarySearch method and display the time it took to find.
+ *  We compute time in nanoseconds with the method System.nanoTime();
  *  
  *  Results are printed to console, which shows that .contains is much faster 
  *  
