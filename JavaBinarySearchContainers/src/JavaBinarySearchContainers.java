@@ -3,10 +3,9 @@
  * Author: Bruce Adams
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
- *  * import java.util.ArrayList;
  *  
- *  This program shows that the method contains is much faster for binary search
- *  then using the method binarySearch. First, the program uses .contains to
+ *  This program shows that the Java Arraylist.contains() method is much faster for binary search
+ *  then using Collections.binarySearch(). First, the program uses Arraylist.contains() to
  *  search for the number 5,000,000 and display the time it took in nanoseconds to
  *  find the number. Second, we search for the number 5,000,000
  *  using the Collections.binarySearch method and display the time it took to find.
