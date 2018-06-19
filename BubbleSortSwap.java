@@ -1,3 +1,11 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * 
+Function to sort array using Bubble Sort. Performance is Big O(n^2), which is one
+of the worst case averages for efficiency. Don't use Bubble sorts.
+*/
 import java.util.Scanner;
 
 public class BubbleSortSwap {
@@ -33,6 +41,9 @@ public class BubbleSortSwap {
 		System.out.println("Array is sorted in " + numberOfSwaps + " swaps.");
 		System.out.println("First Element: " + a[0]);
 		System.out.println("Last Element: " + a[n - 1]);
+		System.out.print("Array sorted: ");
+		for(int nums:a)
+			System.out.print(nums + " "); 
 		in.close();
 	}
 }
