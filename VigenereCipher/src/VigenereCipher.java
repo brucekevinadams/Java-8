@@ -21,8 +21,9 @@ public class VigenereCipher {
 		for (int i = 0, j = 0; i < text.length(); i++) {
 
 			char c = text.charAt(i);
-			// Check for spaces 
-	        if (text.charAt(i) == ' ') res+=" ";
+			// Check for spaces
+			if (text.charAt(i) == ' ')
+				res += " ";
 			if (c < 'A' || c > 'Z')
 				continue;
 
@@ -44,8 +45,9 @@ public class VigenereCipher {
 		for (int i = 0, j = 0; i < text.length(); i++) {
 
 			char c = text.charAt(i);
-			// Check for spaces 
-	        if (text.charAt(i) == ' ') res+=" ";
+			// Check for spaces
+			if (text.charAt(i) == ' ')
+				res += " ";
 			if (c < 'A' || c > 'Z')
 				continue;
 
