@@ -22,6 +22,13 @@ class Printer {
 			System.out.println(obj);
 		}
 	}
+	
+	//This method will print an input array in a line
+	<T> void printArrayLine(T a[]) {
+		for (T obj : a) {
+			System.out.print(obj+" ");
+		}
+	}	
 
 }
 
@@ -37,6 +44,9 @@ public class GenericArray {
 		myPrinter.printArray(intArray);
 		myPrinter.printArray(stringArray);
 		myPrinter.printArray(dblArray);
+		myPrinter.printArrayLine(intArray);
+		myPrinter.printArrayLine(stringArray);
+		myPrinter.printArrayLine(dblArray);
 		int count = 0;
 
 		for (Method method : Printer.class.getDeclaredMethods()) {
