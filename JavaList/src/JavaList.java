@@ -16,10 +16,6 @@ public class JavaList {
 
     @SuppressWarnings({"rawtypes", "unchecked", "boxing"})
     public static void main(String[] args) {
-        /*
-         * Enter your code here. Read input from STDIN. Print output to STDOUT. Your
-		 * class should be named Solution.
-		 */
         // Let us create a list
         List list = new ArrayList();
         System.out.println("How many numbers do you want to insert into a list?");
@@ -40,10 +36,8 @@ public class JavaList {
                 case "Insert":
                 case "I":
                     System.out.println("Insert a number:");
-                    //int index = scan.nextInt();
                     int val = scan.nextInt();
                     System.out.println(val);
-                    //list.add(index, val);
                     list.add(val);
                     System.out.println(list);
                     break;
@@ -54,7 +48,7 @@ public class JavaList {
                     if (list.contains(del)) {
                         Object index = list.indexOf(del);
                         int i = (int) index;
-                       // System.out.println(i);
+                        // System.out.println(i);
                         list.remove(i);
                     } else
                         System.out.println("No such number exists in the ArrayList!");
@@ -73,9 +67,8 @@ public class JavaList {
             }
         }
 
-
         scan.close();
-        System.out.println(list.toString());
+        System.out.println("ArrayList = " + list.toString());
     }
 
 }
