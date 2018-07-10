@@ -4,7 +4,7 @@
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
  *
-
+ This is a HackerRank Java problem:
  Java's BitSet class implements a vector of bit values (i.e.: False(0) or True(1) ) that grows as needed, allowing
  us to easily manipulate bits while optimizing space (when compared to other collections). Any element having a bit
  value of is called a set bit.
