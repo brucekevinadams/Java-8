@@ -30,7 +30,7 @@ public class JavaList {
         System.out.println("List: " + list);
         String typing = "";
 
-        while (!(typing.equals("Quit") || typing.equals("Q"))) {
+        while (!(typing.equals("Quit") || typing.equals("Q") || typing.equals("q"))) {
             System.out.println("Type Insert (I), Delete (D), Print (P), or Quit (Q).");
             switch (typing = scan.next()) {
                 case "Insert":
