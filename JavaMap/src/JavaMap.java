@@ -3,53 +3,77 @@
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
  * 
-You are given a phone book that consists of people's names and their phone number. After that you will be given
-some person's name as query. For each query, print the phone number of that person.
+This Java 8 program uses TreeMap and SortedMap to create a phone book. The user is asked for the number of people 
+to enter into the phone book.
 
-Input Format
-
-The first line will have an integer denoting the number of entries in the phone book. Each entry consists of
-two lines: a name and the corresponding phone number.
-After these, there will be some queries. Each query will contain a person's name. Read the queries until end-of-file.
-
-Constraints:
-A person's name consists of only lower-case English letters and it may be in the format 'first-name last-name'
-or in the format 'first-name'. Each phone number has exactly 8 digits without any leading zeros.
-
-1 <= n <= 100000
-n <= Query <= 100000
+Then, the user enters the name, followed by the phone number. All data is stored as Strings and sorted using SortedMap.
+Next, the user is queried whether to Insert (I) a name, Delete (D) a name, Print (P) the phonebook, or Quit (Q).
 
 */
 
-import java.util.*;
+import java.util.Scanner;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
-public class JavaMap{
-   @SuppressWarnings("boxing")
-public static void main(String []argh)
-   {
-      Scanner in = new Scanner(System.in);
-      System.out.println("Enter number of people to enter into the database: ");
-      int n=in.nextInt();
-      in.nextLine();
-      HashMap<String, Integer> hm = new HashMap<String, Integer>();
-      
-      for(int i=0;i<n;i++)
-      {
-         String name=in.nextLine();
-         int phone=in.nextInt();
-         hm.put(name, phone);         
-         in.nextLine();
-      }
-      while(in.hasNext())
-      {
-         String s=in.nextLine();
-         try{
-            int temp = hm.get(s);
-            System.out.println(s+"="+temp);
-         }catch(NullPointerException e){
-            System.out.println("Not found");
-         }    
-      }
-      in.close();
-   }
+public class JavaMap {
+
+
+    @SuppressWarnings("boxing")
+    public static void main(String[] argh) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter number of people to enter into the database: ");
+        int n = in.nextInt();
+        in.nextLine();
+        SortedMap<String, String> hm = new TreeMap<String, String>();
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter the name of the person at index " + i + ": ");
+            String name = in.nextLine();
+            System.out.println("Enter the phone number: ");
+            String phone = in.nextLine();
+            hm.put(name, phone);
+        }
+
+        String typing = "";
+
+        while (!(typing.equals("Quit") || typing.equals("Q") || typing.equals("q"))) {
+            System.out.println("Type Insert (I), Delete (D), Print (P) or Quit (Q).");
+            switch (typing = in.nextLine()) {
+                case "Insert":
+                case "I":
+                    System.out.println("Insert the persons name:");
+                    String name = in.nextLine();
+                    System.out.println("Enter the phone number: ");
+                    String phone = in.nextLine();
+                    hm.put(name, phone);
+                    break;
+                case "Delete":
+                case "D":
+                    System.out.println("Delete a person from the phonebook:");
+                    String delName = in.nextLine();
+                    try {
+                        String temp = hm.get(delName);
+                        if (temp == null)
+                            System.out.println("That name is not in the phonebook!");
+                        else
+                            hm.remove(delName);
+                    } catch (NullPointerException e) {
+                        System.out.println(delName + " Not found!");
+                    }
+                    break;
+                case "Print":
+                case "P":
+                    System.out.println("Phone Book: " + hm);
+                    break;
+                case "Quit":
+                case "Q":
+                case "q":
+                    break;
+                default:
+                    System.out.println("Unknown input");
+                    break;
+            }
+        }
+        in.close();
+    }
 }
