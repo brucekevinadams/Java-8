@@ -56,7 +56,7 @@ public class JavaList {
                 case "Print":
                 case "P":
                     System.out.println(list.toString());
-                    continue;
+                    break;
                 case "Quit":
                 case "Q":
                 case "q":
