@@ -5,10 +5,12 @@
  *
 This program asks the user how many numbers to enter into an ArrayList. The user then is prompted to either Insert,
 Delete, Print, or Quit. Insert (I) will add a number into the ArrayList, Delete (D), will remove the number from
-the ArrayList, Print will print the ArrayList to the console, and Quit (Q) will quit the program.
+the ArrayList, Print will print the ArrayList to the console, Sort (S) will sort the list in ascending order and
+ Quit (Q or q) will quit the program.
 */
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -31,12 +33,12 @@ public class JavaList {
         String typing = "";
 
         while (!(typing.equals("Quit") || typing.equals("Q") || typing.equals("q"))) {
-            System.out.println("Type Insert (I), Delete (D), Print (P), or Quit (Q).");
+            System.out.println("Type Insert (I), Delete (D), Print (P), Sort (S), Reverse Sort (R) or Quit (Q).");
             switch (typing = scan.next()) {
                 case "Insert":
                 case "I":
                     System.out.println("Insert a number:");
-                    int val = scan.nextInt();
+                    float val = scan.nextFloat();
                     System.out.println(val);
                     list.add(val);
                     System.out.println(list);
@@ -55,7 +57,15 @@ public class JavaList {
                     break;
                 case "Print":
                 case "P":
-                    System.out.println(list.toString());
+                    System.out.println("ArrayList: " + list.toString());
+                    break;
+                case "Sort":
+                case "S":
+                    Collections.sort(list);
+                    break;
+                case "Reverse":
+                case "R":
+                    Collections.reverse(list);
                     break;
                 case "Quit":
                 case "Q":
