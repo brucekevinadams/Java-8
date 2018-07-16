@@ -13,13 +13,19 @@ interface AdvancedArithmetic{
 }
 class MyCalculator implements AdvancedArithmetic {
     public int divisor_sum (int n) {
-
+        List list = new ArrayList();
         int sum = n;
 
         for(int i = 1; i <= n / 2; i++)
         {
-            if(n % i == 0) sum += i;
+            if(n % i == 0) {
+                // Let us create a list
+                list.add(i);
+                sum += i;
+            }
         }
+        list.add(n);
+        System.out.println("Divisors of the integer " + n + " are: " + list);
         return sum;
     }
 }
@@ -30,7 +36,7 @@ class JavaInterface{
         ImplementedInterfaceNames(my_calculator);
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        System.out.print(my_calculator.divisor_sum(n) + "\n");
+        System.out.print("The sum of the divisors of n are: " + my_calculator.divisor_sum(n) + "\n");
         sc.close();
     }
     /*
