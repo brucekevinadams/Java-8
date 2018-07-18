@@ -1,3 +1,17 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+This program shows how Java Lambda Expressions work and is from a Hackerrank java problem. 
+
+Sample Input
+HelloWorld
+
+Sample Output
+872e4e50ce9990d8b041330c47c9ddd11bec6b503ae9386a99da8584e9bb12c4
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
