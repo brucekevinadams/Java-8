@@ -25,7 +25,7 @@ Sample Input   Sample Input                                    Sample Input
 10                 10                                              10
 3                   0                                              hello
 
-Sample Output  Sample Output
+Sample Output  Sample Output                                   Sample Output
 3               java.lang.ArithmeticException: / by zero        java.util.InputMismatchException
 */
 
