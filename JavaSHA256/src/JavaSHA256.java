@@ -5,8 +5,8 @@
  *
 This program shows how SHA256 works and is from a Hackerrank java problem. It will
 take any string, integers, or characters and convert them using the Java
-JavaSHA256() method that is found in the MessageDigest class. It converts the binary hash into a 64 digit 0x hex ouput to
-shorten the 256 bits of binary to more readable form. This is because one Hex digit
+JavaSHA256() method that is found in the MessageDigest class. It converts the binary hash into a 64 digit hex
+ouput to shorten the 256 bits of binary to more readable form. This is because one Hex digit
 represents 4 binary bits (this is called a "Nibble").
 
 Sample Input
@@ -28,7 +28,7 @@ public class JavaSHA256 {
 
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
-    //    System.out.print("Please enter data for which SHA256 is required:");
+        System.out.println("Enter characters to convert to SHA256 Hex:");
         String data = sn.nextLine();
 
         JavaSHA256 sj = new JavaSHA256();
