@@ -1,3 +1,14 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * 
+ Java program to create an MD5 hash of a user entered string.
+ This is from a Hackerrank problem.
+ The program will also create a text file and then append the user 
+ inputted string and the MD5 hash output to the  end of the file.
+*/
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
