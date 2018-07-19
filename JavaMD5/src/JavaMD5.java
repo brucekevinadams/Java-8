@@ -2,10 +2,11 @@
  * Author: Bruce Adams
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
- * 
- Java program to create an MD5 hash of a user entered string.
+ *
+ Java program to create an MD5 hash of a user entered string. Note that since MD5 has collisions,
+ it should never be used in any modern hashing programs, as it is insecure.
  This is from a Hackerrank problem.
- The program will also create a text file and then append the user 
+ The program will also create a text file and then append the user
  inputted string and the MD5 hash output to the  end of the file.
 */
 
