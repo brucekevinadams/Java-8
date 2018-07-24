@@ -34,24 +34,36 @@ public class InterquartileRange {
         int size = scan.nextInt();
         int [] element = new int[size];
         int [] frequency = new int[size];
-        for (int i = 0; i < size; i++) {
-            element[i] = scan.nextInt();
+        try {
+            for (int i = 0; i < size; i++) {
+                element[i] = scan.nextInt();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         int numElements = 0;
-        for (int i = 0; i < size; i++) {
-            frequency[i] = scan.nextInt();
-            numElements += frequency[i];
+        try {
+            for (int i = 0; i < size; i++) {
+                frequency[i] = scan.nextInt();
+                numElements += frequency[i];
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         
         /* Create and sort our data set */
         int [] data = new int[numElements];
         int dataIndex = 0;
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < frequency[i]; j++) {
-                data[dataIndex] = element[i];
-                dataIndex++;
+        try {
+            for (int i = 0; i < size; i++) {
+                for (int j = 0; j < frequency[i]; j++) {
+                    data[dataIndex] = element[i];
+                    dataIndex++;
+                }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         Arrays.sort(data);
         
