@@ -3,7 +3,7 @@
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
  *
- Java program to recreate classic Space Invaders game.
+ Java program to implement the central limit theorem in statistics
 
 */
 
