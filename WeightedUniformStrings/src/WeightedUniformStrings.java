@@ -1,3 +1,18 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * 
+ Java program from a Hackerrank problem. The program takes input in the form of a string of
+ letters and then parses that string to find how many letters were entered and what their
+ "weight" is. For example, an 'a' is weight 1, and a 'b' is weight 2, and so on until 'z' 
+ which has weight 26. It adds up contiguous letters such as 'aaa' in the string for their
+ weight, ('aaa' has weight of 3).
+ Further, the program asks for how many weight queries the user will make, and then outputs whether
+ those queries are in the input with a 'YES' or a 'NO'
+ The program will append YES or NO to the end of the file output.txt.
+*/
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -40,6 +55,7 @@ public class WeightedUniformStrings {
     public static void main(String[] args) throws IOException {
         String fileName = "output.txt";
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName, true));
+        System.out.println("How many queries?");
         String s = scanner.nextLine();
 
         int queriesCount = scanner.nextInt();
