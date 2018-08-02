@@ -55,14 +55,15 @@ public class WeightedUniformStrings {
     public static void main(String[] args) throws IOException {
         String fileName = "output.txt";
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName, true));
-        System.out.println("How many queries?");
+        System.out.println("Please input a string of letters:");
         String s = scanner.nextLine();
 
+        System.out.println("How many queries?");
         int queriesCount = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
         int[] queries = new int[queriesCount];
-
+        System.out.println("Please input " + queriesCount + " weight queries:");
         for (int i = 0; i < queriesCount; i++) {
             int queriesItem = scanner.nextInt();
             scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
