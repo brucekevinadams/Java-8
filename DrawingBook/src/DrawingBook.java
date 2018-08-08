@@ -1,3 +1,12 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * 
+ Java program from Hackerrank problem Drawing Book
+ Written in Java 8
+*/
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
