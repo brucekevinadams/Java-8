@@ -1,14 +1,18 @@
+
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+    This program is from a Hackerrank problem
+*/
+
 import java.util.Scanner;
 
-
-/* Tips:
-1) Instead of using a "boolean[][] visited" array, we alter our original grid
-2) Dont create a 2-D "Point" or "Cell" class. It's not necessary.
-*/
 public class ConnectedCellsInAGrid {
 
-    private static int rows; // here for convenience
-    private static int cols; // here for convenience
+    private static int rows; 
+    private static int cols; 
 
     public static void main(String[] args) {
         /* Read and save grid */
@@ -43,7 +47,7 @@ public class ConnectedCellsInAGrid {
     }
 
     private static int findLargestRegion(int[][] grid, int row, int col) {
-        /* Pro tip: put boundary checks at top of recursive call, 
+        /* Put boundary checks at top of recursive call, 
                     instead of before doing recursive call */
         if (row < 0 || row >= rows || col < 0 || col >= cols) {
             return 0;
