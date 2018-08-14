@@ -5,6 +5,9 @@
  * website: austingamestudios.com
  *
     This program is from a Hackerrank problem
+    A 1 is called a filled cell, a 0 is unfilled.
+    Two cells are said to be connected if they are
+    adjacent to each other horizontally, vertically, or diagonally.
 */
 
 import java.util.Scanner;
