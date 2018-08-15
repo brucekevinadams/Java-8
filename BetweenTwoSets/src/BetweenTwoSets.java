@@ -3,7 +3,7 @@
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
  *
- Java program to search for a string using Regex. This is from a Hackerrank problem.
+ Java program. This is from a Hackerrank problem.
 */
 
 import java.util.Scanner;
