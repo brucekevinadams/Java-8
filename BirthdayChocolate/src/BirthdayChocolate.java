@@ -1,3 +1,11 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * 
+This Java 8 program is from a Hackerrank problem.
+*/
+
 import java.io.*;
 import java.util.List;
 import java.util.stream.Stream;
