@@ -55,6 +55,9 @@ public class BirthdayChocolate {
         int d = Integer.parseInt(dm[0]);
         int m = Integer.parseInt(dm[1]);
 
+        // We must convert the List of s to an Int array by creating the int[] array arr_s,
+        // otherwise it doesn't parse the List properly when sent as a parameter to the 
+        // birthday function above
         int[] arr_s = s.stream().mapToInt(Integer::intValue).toArray();
         int result = birthday(n, arr_s, d, m);
 
