@@ -1,3 +1,11 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ Java program to solve a Hackerrank problem
+*/
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
