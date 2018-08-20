@@ -10,8 +10,6 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-import static java.util.Arrays.binarySearch;
-import static java.util.stream.IntStream.range;
 
 public class ClimbingTheLeaderboard {
 
