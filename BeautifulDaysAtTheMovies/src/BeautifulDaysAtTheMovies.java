@@ -1,3 +1,10 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ */
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
