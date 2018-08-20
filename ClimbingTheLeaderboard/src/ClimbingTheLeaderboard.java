@@ -74,6 +74,7 @@ public class ClimbingTheLeaderboard {
 
         for (int i = 0; i < result.length; i++) {
             bufferedWriter.write(String.valueOf(result[i]));
+            System.out.print(result[i]);
 
             if (i != result.length - 1) {
                 bufferedWriter.write("\n");
