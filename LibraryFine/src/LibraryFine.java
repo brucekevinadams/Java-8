@@ -1,4 +1,10 @@
-import java.util.Scanner;
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+*/ 
+ 
+ import java.util.Scanner;
 
 public class LibraryFine {
 
