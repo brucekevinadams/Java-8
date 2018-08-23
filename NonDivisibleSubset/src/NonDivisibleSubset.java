@@ -1,3 +1,11 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * 
+ * This program is from a Hackerrank practice algorithm coding problem
+*/
+
 import java.util.Scanner;
 
 public class NonDivisibleSubset {
