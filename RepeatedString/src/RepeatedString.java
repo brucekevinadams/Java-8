@@ -1,3 +1,11 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ * From a Hackerrank problem
+*/
+
 import java.util.Scanner;
 
 public class RepeatedString {
