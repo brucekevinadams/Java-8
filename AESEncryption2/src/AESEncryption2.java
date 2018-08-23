@@ -49,6 +49,7 @@ public class AESEncryption2 {
         System.out.println("Encrypted String - " + encryptedString);
         String decryptedString = decrypt(encryptedString);
         System.out.println("After decryption - " + decryptedString);
+        input.close();
     }
 
 }
