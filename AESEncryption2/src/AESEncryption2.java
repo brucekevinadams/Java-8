@@ -13,7 +13,6 @@
 import java.util.Base64;
 import java.util.Scanner;
 
-
 public class AESEncryption2 {
 
     public static String encrypt(String originalInput) {
