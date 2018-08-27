@@ -3,7 +3,12 @@
 *   email: ezaroth@gmail.com
 *   website: austingamestudios.com
 *
-*   This program is a Java 8 program from a Hackerrank problem
+*   This program is a Java 8 program from a Hackkerrank problem to print to console
+*   the "Kaprekar numbers" for a given number that is input from the user.
+*  if the representation of its square in that base can be split into two parts that add
+*  up to the original number, with the proviso that the part formed from the low-order digits
+*  of the square must be non-zero—although it is allowed to include leading zeroes.
+*  For instance, 45 is a Kaprekar number, because 452 = 2025 and 20 + 25 = 45.
 *
  */
 
