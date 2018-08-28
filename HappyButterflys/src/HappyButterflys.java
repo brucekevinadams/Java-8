@@ -1,3 +1,12 @@
+/*
+*   Author: Bruce Adams
+*   email: ezaroth@gmail.com
+*   website: austingamestudios.com
+*
+*   This program is a Java 8 program from a Hackerrank problem
+*
+ */
+
 import java.util.Scanner;
 
 public class HappyButterflys {
