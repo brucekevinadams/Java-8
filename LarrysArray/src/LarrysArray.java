@@ -4,6 +4,7 @@
 *   website: austingamestudios.com
 *
 *   This program is a Java 8 program that is from a Hackerrank problem
+*   It is about rotating an array.
 *
 */
 
@@ -20,12 +21,12 @@ public class LarrysArray {
             for (int j = 0; j < n; j++) {
                 a[j] = scanner.nextInt();
             }
-            bubleSort(a, n);
+            bubbleSort(a, n);
             System.out.println(a[n - 2] < a[n - 1] ? "YES" : "NO");
         }
     }
 
-    public static void bubleSort(int[] array, int n) {
+    public static void bubbleSort(int[] array, int n) {
         for (int i = 0; i < n - 2; i++) {
             for (int j = n - 2 - 1; j >= i; j--) {
                 while (array[j] > array[j + 1] || array[j] > array[j + 2]) {
