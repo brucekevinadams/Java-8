@@ -9,9 +9,9 @@
 import java.util.Scanner;
 
 public class CountLuck {
-    static int count = 0;
-    static int[] dx = {1,0,-1,0};
-    static int[] dy = {0,1,0,-1};
+    static private int count = 0;
+    static private int[] dx = {1,0,-1,0};
+    static private int[] dy = {0,1,0,-1};
     private static boolean dfs(char[][] board, int sx, int sy, int M, int N){
         if(sx<0 || sx>=M || sy<0 || sy>=N || board[sx][sy]=='X' || board[sx][sy]=='@')
             return false;
@@ -25,7 +25,7 @@ public class CountLuck {
         for(int i=0; i<4; i++){
             int tx = sx+dx[i];
             int ty = sy+dy[i];
-            if(dfs(board, tx, ty, M, N)==true){
+            if(dfs(board, tx, ty, M, N)){
                 if(choices>1)
                     count++;
                 return true;
