@@ -1,3 +1,12 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ * Java program from a Hackerrank problem.
+ * This is a very concise Dijkstra program to solve the problem.
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
