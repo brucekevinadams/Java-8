@@ -1,4 +1,10 @@
-
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ * Java program from a Hackerrank problem.
+*/
 
 import java.util.ArrayDeque;
 import java.util.Queue;
