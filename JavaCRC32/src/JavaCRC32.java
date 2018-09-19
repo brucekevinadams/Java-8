@@ -1,3 +1,14 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ * Java program allows a user to pick a file using a dialog box.
+ * The program then performs three CRC checksum calculations using
+ * the Buffered Stream method, the Random Access File method, and the Mapped
+ * File method. Times in ms are included. Usually the Bufferend Input Steam Method
+ * is the fastest.
+*/
 
 import java.awt.*;
 import java.io.*;
