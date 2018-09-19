@@ -1,3 +1,16 @@
+
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ *
+ * Java program that takes a user password, and hashes it
+ * using Salt to further randomize the hash. It then stores
+ * the salted hash in a text file named output.txt.
+ * 
+ * This program is to demonstrate how hasing a password works.
+*/
+
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 import java.io.BufferedWriter;
