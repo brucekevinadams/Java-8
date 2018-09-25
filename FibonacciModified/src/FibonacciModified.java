@@ -1,3 +1,10 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * From a Hackerrank problem
+ */
+
 import java.math.BigInteger;
 import java.util.Scanner;
 
