@@ -2,7 +2,9 @@
  * Author: Bruce Adams
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
- * Java 8 program
+ * Java 8 program that adds up the number of words in a string with each word
+ * starting with a Capital letter. Not counting the first word, which starts
+ * as a lower-case word
  * From a Hackerrank problem
  */
 
