@@ -2,7 +2,7 @@
  * Author: Bruce Adams
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
- * Java 8 program
+ * Java 8 program that reduces a string
  * From a Hackerrank problem
  */
 
