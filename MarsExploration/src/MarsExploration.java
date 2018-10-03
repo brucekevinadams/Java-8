@@ -2,7 +2,8 @@
  * Author: Bruce Adams
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
- * Java 8 program
+ * Java 8 program that parses a text string to determine if there are any repeating patterns
+ * and how many differences there are in the string that don't match the pattern.
  * From a Hackerrank problem
  */
 
