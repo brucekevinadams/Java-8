@@ -2,7 +2,8 @@
  * Author: Bruce Adams
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
- * Java 8 program
+ * Java 8 program that uses .sorted().toArray() to sort an array given as
+ * a parameter from Main, and then returns the sorted array back
  * From a Hackerrank problem
  */
 
