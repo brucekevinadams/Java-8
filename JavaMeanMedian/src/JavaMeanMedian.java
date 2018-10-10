@@ -10,6 +10,9 @@
  *
 */
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -38,6 +41,7 @@ public class JavaMeanMedian {
 
     // Driver program 
     public static void main(String args[]) {
+        String fileName = "output.txt";
         Scanner scan = new Scanner(System.in);
         System.out.println("Please enter the size of an array to be entered: ");
         int n = scan.nextInt();
@@ -47,8 +51,41 @@ public class JavaMeanMedian {
             a[i] = scan.nextInt();
         }
 
-        int s = a.length;
-        System.out.println("Mean = " + findMean(a, n));
-        System.out.println("Median = " + findMedian(a, n));
+        double mean = findMean(a,n);
+        double median = findMedian(a,n);
+        String arr = Arrays.toString(a);
+        System.out.println("Array = " + arr + " ");
+        System.out.println("Mean = " + mean + " ");
+        System.out.println("Median = " + median);
+
+        BufferedWriter bufferedWriter = null;
+        try {
+            bufferedWriter = new BufferedWriter(new FileWriter(fileName, true));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            bufferedWriter.write("Array: " + arr + " ");
+            bufferedWriter.write("Mean = " + mean + " ");
+            bufferedWriter.write("Median = " + median);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            bufferedWriter.newLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        scan.close();
     }
 } 
