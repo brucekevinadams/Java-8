@@ -1,5 +1,14 @@
-// Java program to find mean  
-// and median of an array 
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * Java 8 program that asks the user to enter the size of an array of integers
+ * The user then enters the numbers into the array and the program computes
+ * the mean and median of the array of integers printing them to console and
+ * into an output file.
+ * Hackerrank problem
+ *
+*/
 
 import java.util.Arrays;
 import java.util.Scanner;
