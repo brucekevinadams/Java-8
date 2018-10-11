@@ -3,7 +3,8 @@
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
  * Java 8 program
- * Hackerrank problem
+ * Hackerrank problem that prints an integer representing the
+ * minimum number of deletions needed to make the strings anagrams. 
  */
 
 import java.util.Scanner;
