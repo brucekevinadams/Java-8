@@ -1,3 +1,12 @@
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * Java 8 program
+ * Hackerrank problem
+ */
+ 
+
 import java.util.Scanner;
 
 public class StringConstruction {
