@@ -2,9 +2,8 @@
  * Author: Bruce Adams
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
- * Java 8 program to illustrate reading from FileReader using FileReader 
+ * Java 8 program
  */
-
 
 import java.awt.*;
 import java.io.BufferedReader;
@@ -22,7 +21,7 @@ public class JavaReadTextFile {
         System.out.println("File Path: " + path);
         System.out.println("File: " + filename + "\n");
 
-        BufferedReader input = new BufferedReader(new FileReader(filename));
+        BufferedReader input = new BufferedReader(new FileReader(path));
         String st;
         System.out.println("< CONTENTS OF FILE >");
         while ((st = input.readLine()) != null)
