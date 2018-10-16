@@ -1,5 +1,10 @@
-// Java Program to illustrate reading from 
-// FileReader using FileReader 
+/*
+ * Author: Bruce Adams
+ * email: ezaroth@gmail.com
+ * website: austingamestudios.com
+ * Java 8 program to illustrate reading from FileReader using FileReader 
+ */
+
 
 import java.awt.*;
 import java.io.BufferedReader;
