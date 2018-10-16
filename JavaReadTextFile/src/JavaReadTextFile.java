@@ -2,7 +2,8 @@
  * Author: Bruce Adams
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
- * Java 8 program
+ * Java 8 program that will ask the user to select a text file
+ * The program will then output the contents of the text file to console
  */
 
 import java.awt.*;
