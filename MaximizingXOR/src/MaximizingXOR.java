@@ -3,6 +3,7 @@
  * email: ezaroth@gmail.com
  * website: austingamestudios.com
  * Java 8 program
+ * Given two integers, L and R, find the maximal value of xor L and R 
  */
 
 import java.util.Scanner;
