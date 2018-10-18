@@ -4,6 +4,8 @@
  * website: austingamestudios.com
  * Java 8 program
  * Hackerrank problem
+ * Updated version of the Tower Breakers problem, here you must find if a 
+ * value is prime or not before proceeding
  */
 
 import java.util.Scanner;
